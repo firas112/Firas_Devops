@@ -2,7 +2,7 @@ version: '3'
 
 services:
   achat-app:
-    image: jassercloud/categorietest:v1
+    image: firasgarci/categorie:v1
     ports:
       - "8089:8089"
     depends_on:
@@ -13,7 +13,7 @@ services:
       - SPRING_DATASOURCE_PASSWORD=
     networks:
       - mynetwork
-      - frontend-network
+      
 
   mysql-db:
     image: mysql:5.7
